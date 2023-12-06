@@ -1,0 +1,29 @@
+#default values for rg
+resource_group_resource_group_rg1_name = "Mine_rg_01"
+resource_group_resource_group_rg1_location = "EastUs"
+
+#default values for vnet
+virtual_network_virtual_network_vnet1_name = "Mine_vnet_01"
+virtual_network_virtual_network_vnet1_address_space = ["10.0.0.0/16"]
+virtual_network_virtual_network_vnet1_dns_servers = ["10.0.0.4"]
+
+#default values for subnet
+subnet_subnet_subnet01_name = "Mine_subnet_01" 
+subnet_subnet_subnet01_address_prefixes = "10.0.1.0/24"
+
+#default values for nic
+network_interface_network_interface_nic1_name = "Mine_nic_01"
+network_interface_network_interface_nic1_ip_configuration_name = "internal"
+network_interface_network_interface_nic1_ip_configuration_private_ip_address_allocation = "Dynamic"
+
+#default values for vm
+windows_virtual_machine_Windows_virtual_machine_vm1_name = "Mine_windows_vm_01"
+windows_virtual_machine_Windows_virtual_machine_vm1_size = "Standard_F2"
+windows_virtual_machine_Windows_virtual_machine_vm1_admin_username = "Mine_AdminUser"
+windows_virtual_machine_Windows_virtual_machine_vm1_admin_password = "Mine _ AdminUser@123"
+windows_virtual_machine_Windows_virtual_machine_vm1_os_disk_caching = "ReadWrite"
+windows_virtual_machine_Windows_virtual_machine_vm1_os_disk_caching_storage_Account_type = "Standard_LRS"
+windows_virtual_machine_Windows_virtual_machine_vm1_source_image_reference_publisher = "MicrosoftWindowsServer"
+windows_virtual_machine_Windows_virtual_machine_vm1_source_image_reference_offer = "WindowsServer"
+windows_virtual_machine_indows_virtual_machine_vm1_source_image_reference_sku = "2016-Datacenter"
+windows_virtual_machine_Windows_virtual_machine_vm1_source_image_reference_version = "latest"
